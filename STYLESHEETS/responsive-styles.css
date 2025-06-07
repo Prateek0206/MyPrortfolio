@@ -13,8 +13,8 @@
     justify-content: space-between;
     align-items: center;
     min-width: 100vw;
-
-    padding: 0 min(5rem, 10%);
+    border: 1px solid;
+    padding: 0 min(2rem, 5%);
   }
 
   .nav-links {
@@ -84,7 +84,6 @@
     color: white;
     text-decoration: none;
   }
-  
 
   .ham-nav-links svg {
     position: absolute;
@@ -96,8 +95,8 @@
   }
 }
 
-@media (max-width: 340px) {
-  .hamburger-menu {
+@media (max-width: 210px) {
+  .hamburger-menu-active {
     display: none;
   }
 
