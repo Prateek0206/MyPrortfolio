@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
+:root {
+  --background-color: #0d1621;
+  --primary-accent: #223b58;
+  --secondary-accent: #88c0d0;
+  --primary-text: #e0e0e0;
+  --secondary-text: #a0a0a0;
+  --border-color: #2e2e40;
+  --border-radius: 12px;
+  --primary-font: "Inter", sans-serif;
+}
+
+body {
+  overflow: auto; /* Keep scrolling */
+  scrollbar-width: none; /* Firefox */
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--primary-text);
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-size: clamp(3rem, 4vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 2vw, 5rem);
+  color: var(--secondary-accent);
+  font-weight: normal;
+  
+}
+p,
+li {
+  font-size: clamp(1rem, 1.2vw, 3rem);
+  color: var(--secondary-text);
+  font-weight: 600;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+.ham-nav-links{
+  display: none;
+}
+
+.dynamic-texts {
+  color: white;
+  font-size: clamp(1rem, 1.2vw, 3rem);
+  font-weight: 700;
+  
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  min-height: 15vh;
+  flex: 0.2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-size: clamp(2rem, 3vw, 10rem);
+  font-weight: 600;
+  flex: 0.6;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 0.4;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.2vw, 6rem);
+  flex: 0.25;
+  text-align: center;
+  margin: 0.4rem;
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--primary-accent);
+}
+
+footer div {
+  flex: 0.1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  font-size: clamp(.8rem, 1.2vw, 3rem);
+}
+
+
