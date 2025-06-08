@@ -68,23 +68,32 @@
             </p>
           </div>
           <div id="right-container">
-            <div id="pfp-image-conatiner">
+            <div id="pfp-image-container">
               <img src="../images/pfp.jpg" alt="" />
             </div>
-            <div id="current-status-container">
-              <h2>Currently:</h2>
-              <ul>
-                <li>Learning: <span class="dynamic-texts">JavaScript</span></li>
-                <li>
-                  Playing:
-                  <span class="dynamic-texts"> GTA IV </span>
-                </li>
 
-                <li>
-                  Listening:
-                  <span class="dynamic-texts"> Void </span>
-                </li>
-              </ul>
+            <div class="music-player">
+              <p>Now Playing:</p>
+              <div class="interactive-section">
+                <span class="dynamic-texts">Runaway by Kanye Panda</span>
+                <audio
+                  id="audio"
+                  src="../audios/Runaway (Explicit).mp3"
+                  autoplay
+                  loop
+                ></audio>
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -93,5 +102,6 @@
       <footer><div>&copy;Kanye Panda 2025</div></footer>
     </div>
     <script src="../SCRIPTS/hamburger.js"></script>
+    <script src="../SCRIPTS/music-player.js"></script>
   </body>
 </html>
