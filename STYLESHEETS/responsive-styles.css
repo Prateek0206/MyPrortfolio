@@ -50,7 +50,7 @@
     pointer-events: none;
     transition: filter 0.3s ease-in-out;
   }
-  .hamburger-menu-active {
+  .hamburger-menu {
     display: block;
   }
 
