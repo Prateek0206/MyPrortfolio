@@ -5,6 +5,7 @@
   }
   .main-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -13,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 100vw;
+
     padding: 0 min(2rem, 5%);
   }
 
