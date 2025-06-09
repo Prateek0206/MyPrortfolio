@@ -1,3 +1,10 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
 #parent-container {
   display: flex;
   align-items: center;
@@ -7,7 +14,7 @@
   min-height: max-content;
   padding: min(1rem, 4%);
 
-  flex: 0.7;
+  flex: 0.8;
 }
 
 #left-container {
@@ -22,7 +29,7 @@
   height: 100%;
 
   display: flex;
-  align-items: stretch;
+  align-items: center;
 }
 
 #pfp-image-container {
