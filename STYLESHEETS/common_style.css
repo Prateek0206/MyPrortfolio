@@ -1,7 +1,6 @@
 * {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
- 
+  box-sizing: border-box; /* 
+  outline: 1px solid red; */
 }
 
 :root {
@@ -14,7 +13,9 @@
   --border-radius: 12px;
   --primary-font: "Inter", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow: auto; /* Keep scrolling */
   scrollbar-width: none; /* Firefox */
@@ -33,7 +34,6 @@ h2 {
   font-size: clamp(1rem, 2vw, 5rem);
   color: var(--secondary-accent);
   font-weight: normal;
-  
 }
 p,
 li {
@@ -42,11 +42,11 @@ li {
   font-weight: 600;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
-.ham-nav-links{
+.ham-nav-links {
   display: none;
 }
 
@@ -54,14 +54,6 @@ li {
   color: white;
   font-size: clamp(1rem, 1.2vw, 3rem);
   font-weight: 700;
-  
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100vh;
 }
 
 nav {
@@ -80,7 +72,7 @@ nav {
   flex: 0.6;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
@@ -109,13 +101,10 @@ nav {
 }
 
 footer div {
-  flex: 0.1;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
-  font-size: clamp(.8rem, 1.2vw, 3rem);
+  min-height: 3vh;
+  font-size: clamp(0.8rem, 1.2vw, 3rem);
 }
-
-
